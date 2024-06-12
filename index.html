@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medshift Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="C:\Users\bet\Desktop\lms\lms\Color logo with background.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="job.html">AVAILABLE GIGS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1> Healthcare gigs</h1>
+            <p>Connecting Hospitals & Clinics with Skilled Healthcare Workers
+            </p>
+            <a href="register.html" class="hero_btn">Register Here </a>
+
+        </div>
+
+    </section>
+    <section class="register">
+    <h1>Medshift Solutions</h1>
+    
+    <a href="login.html" class="hero_btn"> SIGN IN </a>
+
+</section>
+
+
+  
+
+    
+<section class="testimonials">
+    <h1>What Our Clients Say</h1>
+    <p>Here are some views shared by hospitals and healthcare workers who have used this platform:</p>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="C:\Users\bet\Desktop\lms\lms\fantasy-7943157_1280.png">
+            <div>
+                <p>Seamless and easy to use. I got a locum without a hustle and got paid on time</p>
+                <h3>Caitlyn Amekan</h3>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+                </div>
+            <div>
+                <img src="C:\Users\bet\Desktop\lms\lms\ai-generated-8570323_1280.png">
+            <p>"Very timely and comes in handy when there are emergencies ang gaps to be filled"</p>
+            <h3>Dream Mission Hospital</h3>
+            <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+        </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="cta">
+    <h1>Join to revolutionize healthcare delivery.</h1>
+    <a href=""class="hero-btn">CONTACT US</a>
+</section>
+
+<section class="footer">
+<h4>About Us</h4>
+<div class="icons">
+  <i class="fa fa-facebook" ></i>
+  <i class="fa fa-whatsapp" ></i>
+  <i class="fa fa-instagram" ></i>
+  <i class="fa fa-linkedin-square" ></i>  
+</div>
+
+<p>Made with <i class="fa fa-heart-o" ></i> by Bet Thomas</p>
+</section>
+
+
+<script src="script.js"></script>
+<script src="script2.js"></script>
+    
+    <script>
+       var navLinks = document.getElementById("navLinks");
+       
+       function showMenu(){
+        navLinks.style.right="0"
+
+       }
+       function hideMenu(){
+        navLinks.style.right="-200px"
+        
+       }
+       
+    </script>
+    <script>
+        var loginForm = document.getElementById("loginform");
+
+        function showLoginForm() {
+            loginForm.style.display = "block";
+        }
+
+        function hideLoginForm() {
+            loginForm.style.display = "none";
+        }
+
+        // Additional functions to show and hide the register form if needed
+        function showRegisterForm() {
+            var registerForm = document.getElementById("register-form");
+            registerForm.style.display = "block";
+        }
+
+        function hideRegisterForm() {
+            var registerForm = document.getElementById("register-form");
+            registerForm.style.display = "none";
+        }
+    </script>
+</body>
+</html>

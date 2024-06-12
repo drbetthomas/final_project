@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Profile</title>
+    <link rel="stylesheet" href="styles_hosp.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Hospital Profile</h1>
+        <form id="profileForm" action="upload.php" method="POST" enctype="multipart/form-data">
+            <label for="name">Hospital Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="subcounty">Subcounty:</label>
+            <input type="text" id="subcounty" name="subcounty" required><br><br>
+            
+            <label for="constituency">Constituency:</label>
+            <input type="text" id="constituency" name="constituency" required><br><br>
+            
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*"><br><br>
+            
+            <label for="payment_info">Payment Information:</label>
+            <textarea id="payment_info" name="payment_info" rows="4" cols="50"></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <script>
+        // Basic validation or any JS functions can be added here
+document.getElementById('profileForm').addEventListener('submit', function(event) {
+    // Example: You can add client-side validation here if needed
+    const name = document.getElementById('name').value;
+    if (name === '') {
+        alert('Please enter the hospital name.');
+        event.preventDefault();
+    }
+});
+
+</script>
+</body>
+</html>

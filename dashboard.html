@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Profile</h1>
+        <form id="profile-form" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="cv">Upload CV:</label>
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+            <br>
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+            <br>
+
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" rows="4" required></textarea>
+            <br>
+
+            <label for="question1">Why do you want to join our platform?</label>
+            <textarea id="question1" name="question1" rows="2" required></textarea>
+            <br>
+
+            <label for="question2">What are your professional goals?</label>
+            <textarea id="question2" name="question2" rows="2" required></textarea>
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('profile-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+        
+            // Show success message
+            alert('Profile created successfully!');
+        
+            // Redirect to another page
+            window.location.href = 'job.html'; // Change to your desired page
+        });
+        </script>
+        
+</body>
+</html>

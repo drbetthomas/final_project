@@ -1,0 +1,104 @@
+/* Apply a global style to reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('Color logo - no background.png');
+    background-position: center; /* Corrected 'centre' to 'center' */
+    background-size: cover;
+    position: relative;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: url('young-handsome-physician-medical-robe-with-stethoscope.jpg') no-repeat center center fixed; /* Make sure you have a background image named 'background.jpg' */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+form select:focus {
+    border-color: #007bff;
+}
+
+::placeholder {
+    color: #aaa;
+}
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    /* Stack header and form on top of each other */
+    header,
+    body {
+      height: auto; /* Remove fixed height */
+    }
+  
+    header {
+      /* Adjust header height for smaller screens */
+      min-height: 200px;
+    }
+    }

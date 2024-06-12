@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        <section class="contact-section">
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form action="send_message.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required><br><br>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea><br><br>
+                    
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> 12377bet@gmail.com</p>
+                <p><strong>Phone:</strong> 0716301088</p>
+                <p><strong>Address:</strong> Nairobi, Kenya</p>
+                <p>Feel free to reach out to us for any inquiries or support. We are here to help you with all your healthcare staffing needs.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

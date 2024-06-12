@@ -1,0 +1,404 @@
+/* styles.css */
+.header{
+    min-height: 100vh;
+    width : 100%;
+    background-image:url('medical-banner-with-doctor-wearing-goggles.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display:flex ;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+.nav-links ul li ::after{
+    content:'';
+    width: 0%;
+    height:2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li :hover::after{
+    width:100%;
+}
+.text-box{
+  width: 90%;  
+  color: #fff;
+  position:absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%, -50%) ;
+  text-align: centre;
+
+}
+
+.text-box h1{
+    font-size: 62px;
+
+}
+
+.text-box p{
+    margin: 10px 0 40 px;
+    font-size: 20px;
+    font-weight: bolder;
+    color:#fff;
+    display: flex;
+    
+}
+
+.hero_btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border:1px solid #fff;
+    padding:12px 34px;
+    font-size:13px;
+    background:transparent;
+    position:relative;
+    cursor: pointer;
+
+}
+.hero_btn:hover{
+  border: 1px solid #f44336; 
+  background: #f44336; 
+  transition:1s ;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height:100vh ;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index:2;
+        transition:1s;
+
+    }
+    nav .fa{
+        display: block;
+        color:#fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+
+}
+body {
+    
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, button {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+header {
+    background-color: #d13967;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    padding: 25px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Course content page styles */
+section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+.course{
+    width:80% ;
+    margin: auto;
+    text-align: centre;
+    padding-top: 100px;
+}
+ h1{
+    font-size: 36px;
+    font-weight: 600;
+
+ }
+  p{
+    color:#777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  .log,
+  .form,
+  #logout-form {
+      display: none; /* Hide the forms initially */
+  }
+  .signup{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    border:1px solid #fff;
+    padding:20px 68px;
+    font-size:30px;
+    background:#d13967;
+    position:relative;
+    cursor: pointer;
+
+  }
+  .signup :hover{
+    border: 1px solid #f44336; 
+  background: #f44336; 
+  transition:1s ;
+  }
+
+
+  .signin{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    border:1px solid #fff;
+    padding:20px 68px;
+    padding-top: 20px;
+    font-size:30px;
+    background:#d13967;
+    position:relative;
+    cursor: pointer;
+  }
+  .signin :hover{
+    border: 1px solid #f44336; 
+  background: #f44336; 
+  transition:1s ;
+  }
+
+  .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+  }
+   h3{
+    text-align: centre;
+    font-weight: 600;
+    margin:10px;
+   }
+   .course-col:hover{
+    box-shadow: 0 0 20px opx rgba(0,0,0,0.2);
+    transition: 0.5s;
+     
+   }
+   @media(max-width:700px){
+     .row{
+    flex-direction:column;
+   }
+}
+.testimonials{
+    width: 80%;
+    margin:auto;
+    padding-top: 100px;
+    text-align: centre;
+}
+
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background:#fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+
+}
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonial-col p{
+    padding: o 15px;
+}
+.testimonial-col h3{
+    margin: 15px;
+    text-align: left;
+}
+
+.testimonial-col .fa{
+    color: #f44336;
+}
+
+@media(max-width:700px){
+    .testimonial-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+.cta{
+    margin:100px auto;
+    width: 80%;
+    background-image:url('Color logo with background.png');
+    background-size: cover;
+    background-position: centre;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+
+}
+
+.cta h1{
+    color:#fff;
+    margin-bottom: 40px;
+    padding:0;
+}
+@media(max-width:700px){
+    cta h1{
+    font-size: 24px;    
+    }
+
+}
+
+.footer{
+    width: 100%;
+    text-align: centre;
+    padding: 30px 0;
+
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding:18px 0;
+
+    .fa-heart-o{
+        color: #f44336;
+    }
+
+}
+.subheader{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient();
+    background-position: centre;
+    background-size: cover;
+    text-align: centre;
+    color: #fff;
+}
+.subheader h1{
+    margin-top: 100px;
+    
+}
